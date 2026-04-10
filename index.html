@@ -912,11 +912,11 @@ function setupFiltersUI(){
 
   function setDonorOptions(list, keep){
     const val=keep && list.includes(keep)?keep:'';
-    donorSel.innerHTML = '<option value="">All Donors…</option>' + list.map(d=>`<option${d===val?' selected':''}>${d}</option>`).join('');
+    donorSel.innerHTML = '<option value="">Donor Name…</option>' + list.map(d=>`<option${d===val?' selected':''}>${d}</option>`).join('');
   }
   function setFYOptions(list, keep){
     const val=keep && list.includes(keep)?keep:'';
-    fySel.innerHTML = '<option value="">All Years…</option>' + list.map(y=>`<option${y===val?' selected':''}>${y}</option>`).join('');
+    fySel.innerHTML = '<option value="">Years…</option>' + list.map(y=>`<option${y===val?' selected':''}>${y}</option>`).join('');
   }
 
   function rebuildAndFilter(trigger){
